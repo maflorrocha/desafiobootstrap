@@ -136,6 +136,33 @@
    
 }
 
+.formulario {
+    background-image:url(./img/pexels-eduardo-dutra-2115217.jpg);
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+#datos {
+    display: inline-block;
+}
+
+#datos .form-control {
+    background-color: white;
+    color: black;
+    width: 300px;
+    transition: all 2s;
+        
+    }
+
+#datos .form-control:focus {
+    width: 500px;
+    background-color: white;
+    color: black;
+    }
+
+
+
 #footer {
     margin: 0px;
     padding: 0px;
@@ -193,6 +220,33 @@
     width: 40px;
     
 }
+
+.container h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.container label {
+    font-size: larger;
+}
+
+.container input {
+    text-align: center;
+}
+
+.container button {
+    font-size: larger;
+    font-family: 'Fahkwang', sans-serif;
+    font-weight: 900;
+    color: white;
+    background-color: grey;
+    border: solid 1px gray;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+}
+
+
 
 
 @media  (max-width:768px) and (min-width:577px) {
@@ -284,6 +338,15 @@
         }
     }   
 
+    .container h2 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .container label {
+        font-size: large;
+    }
+
 }
 
 
@@ -369,6 +432,15 @@
             opacity: 1;
         }
     }   
+
+    .container h2 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .container label {
+        font-size: large;
+    }
 
 }
 
