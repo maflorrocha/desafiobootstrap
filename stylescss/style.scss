@@ -3,6 +3,8 @@
     padding: 0px;
 }
 
+$font_family :'Fahkwang', sans-serif;
+
 #cabezadepagina {
     background-color: white;    
 }
@@ -89,7 +91,7 @@
     }
     10% {opacity: 0;
     }
-    20% {
+    30% {
         opacity: 1;
     }
     100% {
@@ -98,16 +100,17 @@
 }
 
 #parrafo {
-    margin-top: 100px;
+    margin-top: 150px;
     margin-bottom: 100px;  
-    text-align: center;
+    text-align:left;
     position: relative;
     bottom:100px;
+    background-color: #bf930d;
 }
 #parrafo  {
-    color: yellow;
-    font-size:x-large;
-    font-weight:600;
+    color: black;
+    font-size:large;
+    font-weight:400;
     font-family:'Fahkwang', sans-serif  ;
     animation-duration: 30s;
     animation-name: efectoparrafo;
@@ -145,7 +148,7 @@
     1% {
         opacity: 0;
     }
-    2% {
+    4% {
         opacity: 1;
     }
     100% {
@@ -272,11 +275,129 @@
     margin: 20px;
 }
 
-#quienessomos {
+#quienes {
     background-image: url(./img/pexels-fauxels-3183150.jpg);
     background-size: cover;
-}
+    
+    div .caja {
+        background-color: whitesmoke;
+        text-align: center;
+        justify-content: space-between;
+        padding: 20px;
+        font-family: $font_family;
+        margin-top: 200px;
+        margin-bottom: 200px;
+        margin-left: 10px;
+        margin-right: 10px;
+        animation-duration: 60s;
+        animation-name: apareceequipo;
+        animation-iteration-count: infinite;
+    }
+    @keyframes apareceequipo {
+        0% {
+            opacity: 0;
+        }
+    
+        3% {
+            opacity: 0;
+        }
+        6% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 1;
+        }
 
+        h3 {
+            text-transform: uppercase;
+        }
+        
+        
+    }
+}
+#walabi__imagen{
+    background-image: url(./img/shaking.jpg);
+    background-size: cover;
+}   
+
+#walabi__texto {
+    background-color: #454546;
+    color: white;
+    font-family: $font_family;
+    text-align: center;
+    padding: 40px;     
+    }
+
+
+    h1 {
+        background-color: #bf930d;
+        animation-duration: 60s;
+        animation-name: efectowalabi;
+        animation-iteration-count: infinite;
+        @keyframes efectowalabi {
+            0% {
+                opacity: 0;
+            }
+        
+            1% {
+                opacity: 0;
+            }
+            4% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    }
+    
+    h2 {
+        background-color: white;
+        color: black;
+        animation-duration: 60s;
+        animation-name: efectosobrenosotros;
+        animation-iteration-count: infinite;
+        @keyframes efectosobrenosotros {
+            0% {
+                opacity: 0;
+            }
+            
+            4% {
+                opacity: 0;
+                }
+            7% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    
+    }
+
+    p {
+        padding-top: 40px;
+        animation-duration: 60s;
+        animation-name: efectopresentacion;
+        animation-iteration-count: infinite;
+        @keyframes efectopresentacion {
+            0% {
+                opacity: 0;
+            }
+            
+            7% {
+                opacity: 0;
+                }
+            10% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 1;
+            }
+
+         }
+    }
+        
 
 @media  (max-width:768px) and (min-width:577px) {
     #footer__dondeestamos {
@@ -329,7 +450,8 @@
         list-style: none;
     }
     #menumobile {
-        display:list-item;
+        display:flex;
+        align-self: flex-start;
     }
 
     #menumobile ul{
@@ -342,8 +464,12 @@
     }
 
     #menudesplegable>li {
-        float: right;
-        text-align:right;
+        float: left;
+        text-align:left;
+        a {
+            font-family: $font_family;
+            color: black;    
+        }
     }
 
     #menudesplegable>li>ul{
@@ -361,9 +487,13 @@
         0% {
             opacity: 0;
         }
-        20% {
+        5% {
+            opacity: 0;
+        }
+        10% {
             opacity: 1;
         }
+        
         100%{
             opacity: 1;
         }
@@ -377,6 +507,18 @@
     .container label {
         font-size: large;
     }
+        
+    #quienes div .caja {
+          
+            justify-content: space-around;
+            padding: 20px;
+            font-family: $font_family;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-left: 10px;
+            margin-right: 10px;
+    }
+    
 
 }
 
@@ -471,6 +613,17 @@
 
     .container label {
         font-size: large;
+    }
+
+    #quienes div .caja {
+          
+        justify-content: space-around;
+        padding: 10px;
+        font-family: $font_family;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
 }
