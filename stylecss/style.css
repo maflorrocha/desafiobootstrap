@@ -27,7 +27,20 @@
 #seccioncontenido {
   background-image: url(./img/inicio.jpg);
   background-size: cover;
-  text-align: center; }
+  text-align: center;
+  animation-duration: 30s;
+  animation-name: backgroundefecto;
+  animation-iteration-count: infinite; }
+
+@keyframes backgroundefecto {
+  0% {
+    opacity: 0; }
+  5% {
+    opacity: 1; }
+  20% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
 
 #titulo {
   margin-top: 50px;
@@ -102,6 +115,25 @@
   100% {
     opacity: 1; } }
 
+.formulario {
+  background-image: url(./img/pexels-eduardo-dutra-2115217.jpg);
+  background-size: cover;
+  text-align: center;
+  color: white;
+  animation-duration: 30s;
+  animation-name: backgroundefecto2;
+  animation-iteration-count: infinite; }
+
+@keyframes backgroundefecto2 {
+  0% {
+    opacity: 0; }
+  10% {
+    opacity: 1; }
+  20% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
 #form {
   animation-duration: 200s;
   animation-name: formulario;
@@ -121,12 +153,6 @@
   display: flex;
   align-items: center;
   justify-content: center; }
-
-.formulario {
-  background-image: url(./img/pexels-eduardo-dutra-2115217.jpg);
-  background-size: cover;
-  text-align: center;
-  color: white; }
 
 #datos {
   display: inline-block; }
@@ -206,20 +232,37 @@
 
 #quienes {
   background-image: url(./img/pexels-fauxels-3183150.jpg);
-  background-size: cover; }
-  #quienes div .caja {
-    background-color: whitesmoke;
-    text-align: center;
-    justify-content: space-between;
-    padding: 20px;
-    font-family: "Fahkwang", sans-serif;
-    margin-top: 200px;
-    margin-bottom: 200px;
-    margin-left: 10px;
-    margin-right: 10px;
-    animation-duration: 60s;
-    animation-name: apareceequipo;
-    animation-iteration-count: infinite; }
+  background-size: cover;
+  animation-duration: 60s;
+  animation-name: background3;
+  animation-iteration-count: infinite; }
+
+@keyframes background3 {
+  0% {
+    opacity: 0; }
+  5% {
+    opacity: 1; }
+  6% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+h3 {
+  text-transform: uppercase; }
+
+div .caja {
+  background-color: whitesmoke;
+  text-align: center;
+  justify-content: space-between;
+  padding: 20px;
+  font-family: "Fahkwang", sans-serif;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  margin-left: 10px;
+  margin-right: 10px;
+  animation-duration: 60s;
+  animation-name: apareceequipo;
+  animation-iteration-count: infinite; }
 
 @keyframes apareceequipo {
   0% {
@@ -292,6 +335,61 @@ p {
     opacity: 1; }
   100% {
     opacity: 1; } }
+
+#menuproyectos {
+  background-color: #454546;
+  align-items: center; }
+  #menuproyectos #menuproyectos__titulo h2 {
+    background-color: #444446;
+    color: white;
+    font-family: "Fahkwang", sans-serif;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 10px; }
+  #menuproyectos #menuproyectos__menu {
+    text-align: center; }
+    #menuproyectos #menuproyectos__menu a {
+      font-family: "Fahkwang", sans-serif;
+      color: white;
+      padding-left: 20px; }
+
+.proyecto__titulo h2 {
+  margin: 0px;
+  background-color: #454546;
+  color: white; }
+
+.proyecto__descripcion {
+  margin: 0px; }
+
+#carrusel {
+  background-image: url(/desafioboot/stylecss/img/5568.jpg);
+  background-size: cover;
+  justify-content: center;
+  animation-duration: 100s;
+  animation-name: efectocarrusel;
+  animation-iteration-count: infinite; }
+
+@keyframes efectocarrusel {
+  0% {
+    opacity: 0; }
+  5% {
+    opacity: 0; }
+  13% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+.proyecto__titulo {
+  text-align: center;
+  padding-top: 20px; }
+
+.proyecto__descripcion {
+  text-align: center; }
+  .proyecto__descripcion a {
+    color: #bf930d;
+    font-family: "Fahkwang", sans-serif;
+    font-weight: 400; }
 
 @media (max-width: 768px) and (min-width: 577px) {
   #footer__dondeestamos {
