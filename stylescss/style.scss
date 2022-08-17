@@ -39,8 +39,27 @@ $font_family :'Fahkwang', sans-serif;
     background-image: url(./img/inicio.jpg);
     background-size: cover;
     text-align: center;
-
+    animation-duration: 30s;
+    animation-name: backgroundefecto;
+    animation-iteration-count: infinite;
 }
+
+@keyframes backgroundefecto {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }    
+}
+
+
 
 #titulo {
     margin-top: 50px;
@@ -105,7 +124,9 @@ $font_family :'Fahkwang', sans-serif;
     text-align:left;
     position: relative;
     bottom:100px;
-    background-color: #bf930d;
+    h4 {
+        background-color: #bf930d;
+    }
 }
 #parrafo  {
     color: black;
@@ -125,6 +146,33 @@ $font_family :'Fahkwang', sans-serif;
     }
     15% {
         opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }    
+}
+
+.formulario {
+    background-image:url(./img/pexels-eduardo-dutra-2115217.jpg);
+    background-size: cover;
+    text-align: center;
+    color: white;
+    animation-duration: 30s;
+    animation-name: backgroundefecto2;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes backgroundefecto2 {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
     }
     20% {
         opacity: 1;
@@ -165,12 +213,7 @@ $font_family :'Fahkwang', sans-serif;
 
 
 
-.formulario {
-    background-image:url(./img/pexels-eduardo-dutra-2115217.jpg);
-    background-size: cover;
-    text-align: center;
-    color: white;
-}
+
 
 #datos {
     display: inline-block;
@@ -278,6 +321,32 @@ $font_family :'Fahkwang', sans-serif;
 #quienes {
     background-image: url(./img/pexels-fauxels-3183150.jpg);
     background-size: cover;
+    animation-duration: 60s;
+    animation-name: background3;
+    animation-iteration-count: infinite;
+    }
+    
+    @keyframes background3 {
+        0% {
+            opacity: 0;
+        }
+    
+        5% {
+            opacity: 1;
+        }
+        6% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 1;
+        }
+        }
+
+        h3 {
+            text-transform: uppercase;
+        }
+        
+    
     
     div .caja {
         background-color: whitesmoke;
@@ -314,7 +383,7 @@ $font_family :'Fahkwang', sans-serif;
         
         
     }
-}
+
 #walabi__imagen{
     background-image: url(./img/shaking.jpg);
     background-size: cover;
@@ -380,6 +449,7 @@ $font_family :'Fahkwang', sans-serif;
         animation-duration: 60s;
         animation-name: efectopresentacion;
         animation-iteration-count: infinite;
+        }
         @keyframes efectopresentacion {
             0% {
                 opacity: 0;
@@ -396,8 +466,78 @@ $font_family :'Fahkwang', sans-serif;
             }
 
          }
+    
+
+#menuproyectos {
+    background-color: #454546;
+    align-items: center;
+    #menuproyectos__titulo h2 {
+        background-color: hsl(240, 1%, 27%);
+        color: white;
+        font-family: $font_family;
+        text-align: center;
+        font-weight: 700;
+        padding-top: 20px;
+        padding-bottom: 10px;
     }
-        
+    #menuproyectos__menu {
+        text-align: center;
+        a {
+            font-family: $font_family;
+            color: white;
+            padding-left: 20px;
+        }
+    }
+}
+
+.proyecto__titulo h2 { 
+    margin: 0px;
+    background-color: #454546;
+    color: white;
+}
+
+.proyecto__descripcion {
+    margin: 0px;
+}
+
+#carrusel {
+    background-image: url(/desafioboot/stylecss/img/5568.jpg);
+    background-size: cover;
+    justify-content: center;
+    animation-duration: 100s;
+    animation-name: efectocarrusel;
+    animation-iteration-count: infinite;
+}
+@keyframes efectocarrusel {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 0;
+    }
+    
+    13% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.proyecto__titulo {
+    text-align: center;
+    padding-top: 20px;
+}
+.proyecto__descripcion {
+    text-align: center;
+    a {
+        color: #bf930d;
+        font-family: $font_family;
+        font-weight: 400;
+    }
+
+}
+
 
 @media  (max-width:768px) and (min-width:577px) {
     #footer__dondeestamos {

@@ -92,8 +92,9 @@
   margin-bottom: 100px;
   text-align: left;
   position: relative;
-  bottom: 100px;
-  background-color: #bf930d; }
+  bottom: 100px; }
+  #parrafo h4 {
+    background-color: #bf930d; }
 
 #parrafo {
   color: black;
