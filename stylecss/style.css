@@ -232,8 +232,6 @@
   margin: 20px; }
 
 #quienes {
-  background-image: url(./img/pexels-fauxels-3183150.jpg);
-  background-size: cover;
   animation-duration: 60s;
   animation-name: background3;
   animation-iteration-count: infinite; }
@@ -251,8 +249,31 @@
 h3 {
   text-transform: uppercase; }
 
+#quienes #quienes__p:nth-child(1) {
+  background-color: #eecd86; }
+
+#quienes #quienes__p:nth-child(2) {
+  background-color: #e18942; }
+
+#quienes #quienes__p:nth-child(3) {
+  background-color: #b95835; }
+
+#quienes #quienes__p:nth-child(4) {
+  background-color: #3d3242; }
+
+#quienes #quienes__p:nth-child(1) {
+  color: #3d3242; }
+
+#quienes #quienes__p:nth-child(2) {
+  color: #eecd86; }
+
+#quienes #quienes__p:nth-child(3) {
+  color: #e18942; }
+
+#quienes #quienes__p:nth-child(4) {
+  color: #b95835; }
+
 div .caja {
-  background-color: whitesmoke;
   text-align: center;
   justify-content: space-between;
   padding: 20px;

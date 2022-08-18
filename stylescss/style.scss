@@ -319,8 +319,6 @@ $font_family :'Fahkwang', sans-serif;
 }
 
 #quienes {
-    background-image: url(./img/pexels-fauxels-3183150.jpg);
-    background-size: cover;
     animation-duration: 60s;
     animation-name: background3;
     animation-iteration-count: infinite;
@@ -345,11 +343,38 @@ $font_family :'Fahkwang', sans-serif;
         h3 {
             text-transform: uppercase;
         }
-        
     
+$mapacolores: (
+    1: #eecd86,
+    2: #e18942,
+    3: #b95835,
+    4: #3d3242
+);
     
+@each $id, $backcolor in $mapacolores {
+    #quienes{
+        #quienes__p:nth-child(#{$id}){
+            background-color: $backcolor;
+        }
+    }
+}
+
+$mapaletra: (
+    1: #3d3242,
+    2: #eecd86,
+    3: #e18942,
+    4: #b95835
+);
+
+@each $id, $fontcolor in $mapaletra {
+    #quienes{
+        #quienes__p:nth-child(#{$id}){
+        color: $fontcolor;
+    }
+ }
+}
+   
     div .caja {
-        background-color: whitesmoke;
         text-align: center;
         justify-content: space-between;
         padding: 20px;
