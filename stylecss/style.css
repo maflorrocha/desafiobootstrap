@@ -299,18 +299,18 @@ div .caja {
     text-transform: uppercase; } }
 
 #walabi__imagen {
-  background-image: url(./img/shaking.jpg);
+  background-image: url(./img/pexels-eduardo-dutra-2115217.jpg);
   background-size: cover; }
 
 #walabi__texto {
-  background-color: #454546;
-  color: white;
+  background-color: #3d3242;
+  color: whitesmoke;
   font-family: "Fahkwang", sans-serif;
   text-align: center;
   padding: 40px; }
 
 h1 {
-  background-color: #bf930d;
+  background-color: #b95835;
   animation-duration: 60s;
   animation-name: efectowalabi;
   animation-iteration-count: infinite; }
@@ -326,7 +326,7 @@ h1 {
     opacity: 1; } }
 
 h2 {
-  background-color: white;
+  background-color: #eecd86;
   color: black;
   animation-duration: 60s;
   animation-name: efectosobrenosotros;
@@ -359,11 +359,11 @@ p {
     opacity: 1; } }
 
 #menuproyectos {
-  background-color: #454546;
+  background-color: #3d3242;
   align-items: center; }
   #menuproyectos #menuproyectos__titulo h2 {
-    background-color: #444446;
-    color: white;
+    background-color: #3d3242;
+    color: #eecd86;
     font-family: "Fahkwang", sans-serif;
     text-align: center;
     font-weight: 700;
@@ -374,15 +374,20 @@ p {
     #menuproyectos #menuproyectos__menu a {
       font-family: "Fahkwang", sans-serif;
       color: white;
-      padding-left: 20px; }
+      padding-left: 20px;
+      animation-duration: 60s;
+      animation-name: efectopresentacion;
+      animation-iteration-count: infinite; }
 
-.proyecto__titulo h2 {
+.proyecto__titulo h2, .proyecto__descripcion h2 {
   margin: 0px;
-  background-color: #454546;
-  color: white; }
+  background-color: #eecd86;
+  color: #3d3242; }
 
 .proyecto__descripcion {
-  margin: 0px; }
+  margin: 0px;
+  background-color: white;
+  color: #3d3242; }
 
 #carrusel {
   background-image: url(/desafioboot/stylecss/img/5568.jpg);
@@ -402,16 +407,13 @@ p {
   100% {
     opacity: 1; } }
 
-.proyecto__titulo {
-  text-align: center;
-  padding-top: 20px; }
-
-.proyecto__descripcion {
+.proyecto__titulo, .proyecto__descripcion {
   text-align: center; }
-  .proyecto__descripcion a {
-    color: #bf930d;
-    font-family: "Fahkwang", sans-serif;
-    font-weight: 400; }
+
+.proyecto__descripcion a {
+  color: #bf930d;
+  font-family: "Fahkwang", sans-serif;
+  font-weight: 400; }
 
 @media (max-width: 768px) and (min-width: 577px) {
   #footer__dondeestamos {
