@@ -233,7 +233,10 @@ $font_family :'Fahkwang', sans-serif;
     color: black;
     }
 
-
+@mixin footerimg($width,$height) {
+    width: $width;
+    height: $height;
+} 
 
 #footer {
     margin: 0px;
@@ -273,23 +276,17 @@ $font_family :'Fahkwang', sans-serif;
 }
 
 #footer__mapa img{
-    height: 40px;
-    width: 40px;
-
-   
-
+   @include footerimg(40px,40px)
 }
 
 #footer__facebook img {
-    height: 60px;
-    width: 60px;
+    @include footerimg(60px,60px )
    
     
 }
 
 #footer__instagram img {
-    height: 40px;
-    width: 40px;
+    @include footerimg(40px,40px )
     
 }
 
@@ -575,18 +572,15 @@ $mapaletra: (
 
 
     #footer__mapa img{
-        height: 50px;
-        width: 50px;
+        @include footerimg(50px,50px )
     }
 
     #footer__facebook img {
-        height: 70px;
-        width: 70px;    
+        @include footerimg(70px,70px )   
     }
     
     #footer__instagram img {
-        height: 50px;
-        width: 50px;
+        @include footerimg(50px,50px )
         
     } 
 
@@ -698,23 +692,20 @@ $mapaletra: (
     }
     
     #footer__mapa img{
-        height: 40px;
-        width: 40px;
+        @include footerimg(40px,40px )
     
    
 
     }
 
     #footer__facebook img {
-        height: 60px;
-        width: 60px;
+        @include footerimg(60px,60px )
        
         
     }
     
     #footer__instagram img {
-        height: 40px;
-        width: 40px;
+        @include footerimg(40px,40px )
         
     }
 
