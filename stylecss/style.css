@@ -378,11 +378,12 @@ div .caja {
     opacity: 1; } }
 
 #menuproyectos {
-  background-color: #3d3242;
-  align-items: center; }
-  #menuproyectos #menuproyectos__titulo h2 {
-    background-color: #3d3242;
-    color: #eecd86;
+  background-color: whitesmoke;
+  align-items: center;
+  border-top: solid 1px #3d3242; }
+  #menuproyectos b #menuproyectos__titulo h2 {
+    background-color: whitesmoke;
+    color: #3d3242;
     font-family: "Fahkwang", sans-serif;
     text-align: center;
     font-weight: 700;
@@ -390,38 +391,147 @@ div .caja {
     padding-bottom: 10px; }
   #menuproyectos #menuproyectos__menu {
     text-align: center; }
+    #menuproyectos #menuproyectos__menu #hormiga {
+      color: #76323f; }
+    #menuproyectos #menuproyectos__menu #bebedero {
+      color: #3d3242; }
+    #menuproyectos #menuproyectos__menu #atiko {
+      color: #bf930d; }
     #menuproyectos #menuproyectos__menu a {
       font-family: "Fahkwang", sans-serif;
-      color: white;
       padding-left: 20px;
       animation-duration: 60s;
       animation-name: efectopresentacion;
       animation-iteration-count: infinite; }
 
-.proyecto__titulo h2, .proyecto__descripcion h2 {
-  margin: 0px;
-  background-color: #eecd86;
-  color: #3d3242; }
+#portfolio1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
 
-.proyecto__descripcion {
-  margin: 0px;
-  background-color: white;
-  color: #3d3242; }
+#chn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #76323f;
+  color: whitesmoke; }
+  #chn .nombre__proyecto {
+    width: 600px;
+    display: inline;
+    float: left;
+    text-align: center;
+    padding-top: 70px; }
+  #chn .proyecto__descripcion {
+    width: 700px;
+    float: right;
+    text-align: center;
+    background-color: #76323f;
+    color: whitesmoke;
+    padding-top: 10px; }
+    #chn .proyecto__descripcion a {
+      align-items: right; }
 
-#carrusel {
-  background-image: url(/desafioboot/stylecss/img/5568.jpg);
-  background-size: cover;
+#bebe {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #3d3242;
+  color: whitesmoke; }
+  #bebe .nombre__proyecto {
+    width: 600px;
+    display: inline;
+    float: left;
+    text-align: center;
+    padding-top: 50px; }
+  #bebe .proyecto__descripcion {
+    width: 700px;
+    float: right;
+    text-align: center;
+    background-color: #3d3242;
+    color: whitesmoke;
+    padding-top: 10px; }
+    #bebe .proyecto__descripcion a {
+      align-items: right; }
+
+#ati {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #bf930d;
+  color: whitesmoke; }
+  #ati .nombre__proyecto {
+    width: 600px;
+    display: inline;
+    float: left;
+    text-align: center;
+    padding-top: 40px; }
+  #ati .proyecto__descripcion {
+    width: 700px;
+    float: right;
+    text-align: center;
+    background-color: #bf930d;
+    color: whitesmoke;
+    padding-top: 10px; }
+    #ati .proyecto__descripcion a {
+      align-items: right;
+      color: #3d3242; }
+
+#carruselchn {
+  background-color: #76323f;
   justify-content: center;
   animation-duration: 100s;
   animation-name: efectocarrusel;
   animation-iteration-count: infinite; }
+  #carruselchn img {
+    border: solid 2px #3d3242;
+    margin-bottom: 10px; }
 
 @keyframes efectocarrusel {
   0% {
     opacity: 0; }
-  5% {
+  2% {
     opacity: 0; }
-  13% {
+  4% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+#carruselbebe {
+  background-color: #3d3242;
+  justify-content: center;
+  animation-duration: 100s;
+  animation-name: efectocarrusel;
+  animation-iteration-count: infinite; }
+  #carruselbebe img {
+    border: solid 2px #bf930d;
+    margin-bottom: 10px; }
+
+@keyframes efectocarrusel {
+  0% {
+    opacity: 0; }
+  2% {
+    opacity: 0; }
+  4% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+#carruselati {
+  background-color: #bf930d;
+  justify-content: center;
+  animation-duration: 100s;
+  animation-name: efectocarrusel;
+  animation-iteration-count: infinite; }
+  #carruselati img {
+    border: solid 2px #76323f;
+    margin-bottom: 10px; }
+
+@keyframes efectocarrusel {
+  0% {
+    opacity: 0; }
+  2% {
+    opacity: 0; }
+  4% {
     opacity: 1; }
   100% {
     opacity: 1; } }
