@@ -3,7 +3,7 @@
   padding: 0px; }
 
 #cabezadepagina {
-  background-color: white; }
+  background-color: whitesmoke; }
 
 #header {
   font-family: 'Fahkwang', sans-serif;
@@ -50,12 +50,11 @@ audio {
   display: none; }
 
 #titulo h1 {
-  background-color: #b95835;
-  opacity: 90%;
+  background-color: #76323f;
+  opacity: 80%;
   font-family: 'Fahkwang', sans-serif;
   font-size: 400%;
   color: white;
-  position: relative;
   border-radius: 20px;
   animation-duration: 30s;
   animation-name: aparecetitulo;
@@ -107,6 +106,7 @@ audio {
   padding: 20px; }
   #parrafo h4 {
     background-color: whitesmoke;
+    opacity: 80%;
     border-radius: 20px;
     padding: 5px; }
 
@@ -161,12 +161,11 @@ audio {
 
 #datos {
   display: inline-block; }
-
-#datos .form-control {
-  background-color: white;
-  color: black;
-  width: 300px;
-  transition: all 2s; }
+  #datos .form-control {
+    background-color: white;
+    color: black;
+    width: 300px;
+    transition: all 2s; }
 
 #datos .form-control:focus {
   width: 500px;
@@ -176,18 +175,20 @@ audio {
 #footer {
   margin: 0px;
   padding: 0px;
-  background-color: black;
-  opacity: 90%; }
+  background-color: black; }
+  #footer .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; }
+    #footer .row div {
+      width: 120px; }
 
-#footer .row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around; }
-
-#footer .row div {
-  width: 120px; }
+#footerw__dondeestamos {
+  color: white;
+  font-family: 'Fahkwang', sans-serif;
+  width: 130px; }
 
 #footer__dondeestamos {
   color: white;
@@ -195,17 +196,15 @@ audio {
   width: 130px; }
 
 #footer__mapa img {
-  border-radius: 40px; }
+  border-radius: 40px;
+  width: 40px;
+  height: 40px; }
 
 #footer__nuestrasredes h6 {
   color: white;
   text-align: right;
   font-family: 'Fahkwang', sans-serif;
   padding-right: 5px; }
-
-#footer__mapa img {
-  width: 40px;
-  height: 40px; }
 
 #footer__facebook img {
   width: 60px;
@@ -258,25 +257,25 @@ h3 {
   background-color: #eecd86; }
 
 #quienes #quienes__p:nth-child(2) {
-  background-color: #e18942; }
+  background-color: #bf930d; }
 
 #quienes #quienes__p:nth-child(3) {
-  background-color: #b95835; }
+  background-color: #76323f; }
 
 #quienes #quienes__p:nth-child(4) {
   background-color: #3d3242; }
 
 #quienes #quienes__p:nth-child(1) {
-  color: #3d3242; }
+  color: #76323f; }
 
 #quienes #quienes__p:nth-child(2) {
-  color: #eecd86; }
+  color: #3d3242; }
 
 #quienes #quienes__p:nth-child(3) {
-  color: #e18942; }
+  color: #bf930d; }
 
 #quienes #quienes__p:nth-child(4) {
-  color: #b95835; }
+  color: #eecd86; }
 
 div .caja {
   text-align: center;
@@ -303,22 +302,36 @@ div .caja {
   h3 {
     text-transform: uppercase; } }
 
-#walabi__imagen {
-  background-image: url(./img/pexels-eduardo-dutra-2115217.jpg);
+#walabi {
+  background-image: url(/desafioboot/img/pexels-fauxels-3183150.jpg);
   background-size: cover; }
+  #walabi #walabirow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
 
 #walabi__texto {
-  background-color: #3d3242;
+  background-color: #76323f;
+  opacity: 90%;
+  border-radius: 400px;
   color: whitesmoke;
   font-family: "Fahkwang", sans-serif;
-  text-align: center;
-  padding: 40px; }
-
-h1 {
-  background-color: #b95835;
-  animation-duration: 60s;
-  animation-name: efectowalabi;
-  animation-iteration-count: infinite; }
+  padding: 80px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  #walabi__texto h1 {
+    background-color: whitesmoke;
+    color: #76323f;
+    width: 200px;
+    border-radius: 20px;
+    position: relative;
+    left: 50px;
+    padding-left: 10px;
+    animation-duration: 60s;
+    animation-name: efectowalabi;
+    animation-iteration-count: infinite; }
 
 @keyframes efectowalabi {
   0% {
@@ -329,13 +342,14 @@ h1 {
     opacity: 1; }
   100% {
     opacity: 1; } }
-
-h2 {
-  color: white;
-  font-weight: 500;
-  animation-duration: 60s;
-  animation-name: efectosobrenosotros;
-  animation-iteration-count: infinite; }
+  #walabi__texto h2 {
+    color: white;
+    font-weight: 500;
+    position: relative;
+    left: 50px;
+    animation-duration: 60s;
+    animation-name: efectosobrenosotros;
+    animation-iteration-count: infinite; }
 
 @keyframes efectosobrenosotros {
   0% {
@@ -346,12 +360,12 @@ h2 {
     opacity: 1; }
   100% {
     opacity: 1; } }
-
-p {
-  padding-top: 40px;
-  animation-duration: 60s;
-  animation-name: efectopresentacion;
-  animation-iteration-count: infinite; }
+  #walabi__texto p {
+    position: relative;
+    left: 50px;
+    animation-duration: 60s;
+    animation-name: efectopresentacion;
+    animation-iteration-count: infinite; }
 
 @keyframes efectopresentacion {
   0% {
@@ -425,6 +439,11 @@ p {
     display: none;
     font-size: small;
     position: relative; }
+  #walabi__texto {
+    padding: 50px; }
+    #walabi__texto h1 {
+      width: 170px;
+      margin-left: 20px; }
   #footer__mapa img {
     width: 50px;
     height: 50px; }
@@ -496,6 +515,8 @@ p {
     font-size: smaller;
     position: relative;
     display: none; }
+  #walabi__texto {
+    padding: 60px; }
   #footer__mapa img {
     width: 40px;
     height: 40px; }

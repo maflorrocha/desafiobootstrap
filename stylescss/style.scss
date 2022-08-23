@@ -3,10 +3,16 @@
     padding: 0px;
 }
 
+$gris: #3d3242;
+$bordo: #76323f;
+$camel: #bf930d;
+$beige: #eecd86;
+$colorheader: whitesmoke;
+$colorfooter: black;
 $font_family :'Fahkwang', sans-serif;
 
 #cabezadepagina {
-    background-color: white;    
+    background-color: $colorheader;    
 }
 
 #header {
@@ -66,13 +72,17 @@ $font_family :'Fahkwang', sans-serif;
     padding-top: 50px;    
 }
 
+audio {
+    display: none;
+}
+
 #titulo h1 {
-    background-color: #b95835;
+    background-color: $bordo;
+    opacity: 80%;
     font-family:  'Fahkwang', sans-serif;
     font-size: 400%;
     color: white;
-    position: relative;
-    z-index: 100;
+    border-radius: 20px;
     animation-duration: 30s;
     animation-name: aparecetitulo;
     animation-iteration-count: infinite;
@@ -121,14 +131,9 @@ $font_family :'Fahkwang', sans-serif;
 #parrafo {
     margin-top: 150px;
     margin-bottom: 100px;  
-    text-align:left;
+    text-align:center;
     position: relative;
     bottom:100px;
-    h4 {
-        background-color: #eecd86;
-    }
-}
-#parrafo  {
     color: black;
     font-size:large;
     font-weight:400;
@@ -137,7 +142,14 @@ $font_family :'Fahkwang', sans-serif;
     animation-name: efectoparrafo;
     animation-iteration-count: infinite;
     padding: 20px;
+    h4 {
+        background-color: whitesmoke;
+        opacity: 80%;
+        border-radius: 20px;
+        padding: 5px;
+    }
 }
+
 
 
 @keyframes efectoparrafo {
@@ -217,15 +229,13 @@ $font_family :'Fahkwang', sans-serif;
 
 #datos {
     display: inline-block;
+    .form-control {
+        background-color: white;
+        color: black;
+        width: 300px;
+        transition: all 2s;   
+        }
 }
-
-#datos .form-control {
-    background-color: white;
-    color: black;
-    width: 300px;
-    transition: all 2s;
-        
-    }
 
 #datos .form-control:focus {
     width: 500px;
@@ -241,20 +251,27 @@ $font_family :'Fahkwang', sans-serif;
 #footer {
     margin: 0px;
     padding: 0px;
-    background-color: #454546;
+    background-color: $colorfooter;
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        div {
+         width: 120px;
+         }
+     }   
 }
 
-#footer .row {
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   align-items: center;
-   justify-content: space-around;
+#footerw__dondeestamos {
+    color: white;
+    font-family:'Fahkwang', sans-serif;
+    width: 130px;
+  
 }
 
-#footer .row div {
-    width: 120px;
-}
+
 
 #footer__dondeestamos {
     color: white;
@@ -265,6 +282,7 @@ $font_family :'Fahkwang', sans-serif;
 
 #footer__mapa img {
     border-radius: 40px;
+    @include footerimg(40px,40px)
 }
 
 #footer__nuestrasredes h6 {
@@ -275,9 +293,6 @@ $font_family :'Fahkwang', sans-serif;
     
 }
 
-#footer__mapa img{
-   @include footerimg(40px,40px)
-}
 
 #footer__facebook img {
     @include footerimg(60px,60px )
@@ -290,30 +305,30 @@ $font_family :'Fahkwang', sans-serif;
     
 }
 
-.container h2 {
-    padding-top: 30px;
-    padding-bottom: 30px;
+.container {
+    h2 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    label {
+        font-size: larger;
+    }
+    input {
+        text-align: center;
+    }
+    button {
+        font-size: larger;
+        font-family: 'Fahkwang', sans-serif;
+        font-weight: 900;
+        color: white;
+        background-color: grey;
+        border: solid 1px gray;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 20px;
+    }
 }
 
-.container label {
-    font-size: larger;
-}
-
-.container input {
-    text-align: center;
-}
-
-.container button {
-    font-size: larger;
-    font-family: 'Fahkwang', sans-serif;
-    font-weight: 900;
-    color: white;
-    background-color: grey;
-    border: solid 1px gray;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 20px;
-}
 
 #quienes {
     animation-duration: 60s;
@@ -342,9 +357,9 @@ $font_family :'Fahkwang', sans-serif;
         }
     
 $mapacolores: (
-    1: #eecd86,
-    2: #e18942,
-    3: #b95835,
+    1: $beige,
+    2: $camel,
+    3: $bordo,
     4: #3d3242
 );
     
@@ -357,10 +372,10 @@ $mapacolores: (
 }
 
 $mapaletra: (
-    1: #3d3242,
-    2: #eecd86,
-    3: #e18942,
-    4: #b95835
+    1: $bordo,
+    2: #3d3242,
+    3: $camel,
+    4: $beige
 );
 
 @each $id, $fontcolor in $mapaletra {
@@ -405,23 +420,37 @@ $mapaletra: (
         
         
     }
+    
 
-#walabi__imagen{
-    background-image: url(./img/pexels-eduardo-dutra-2115217.jpg);
+#walabi {
+    background-image: url(/desafioboot/img/pexels-fauxels-3183150.jpg);
     background-size: cover;
+    #walabirow {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
 }   
 
 #walabi__texto {
-    background-color: #3d3242;
+    background-color: $bordo;
+    opacity: 90%;
+    border-radius: 400px;
     color: whitesmoke;
     font-family: $font_family;
-    text-align: center;
-    padding: 40px;     
-    }
-
-
+    padding: 80px;     
+    margin-top: 20px;
+    margin-bottom: 20px;
     h1 {
-        background-color: #b95835;
+        background-color: $colorheader;
+        color: $bordo;
+        width: 200px;
+        border-radius: 20px;
+        position: relative;
+        left: 50px;
+        padding-left: 10px;
         animation-duration: 60s;
         animation-name: efectowalabi;
         animation-iteration-count: infinite;
@@ -441,10 +470,11 @@ $mapaletra: (
             }
         }
     }
-    
     h2 {
         color: white;
         font-weight: 500;
+        position: relative;
+        left: 50px;
         animation-duration: 60s;
         animation-name: efectosobrenosotros;
         animation-iteration-count: infinite;
@@ -465,9 +495,9 @@ $mapaletra: (
         }
     
     }
-
     p {
-        padding-top: 40px;
+        position: relative;
+        left: 50px;
         animation-duration: 60s;
         animation-name: efectopresentacion;
         animation-iteration-count: infinite;
@@ -488,7 +518,7 @@ $mapaletra: (
             }
 
          }
-    
+        }
 
 #menuproyectos {
     background-color: #3d3242;
@@ -571,7 +601,14 @@ $mapaletra: (
         display: none;
         font-size: small;
         position: relative;
-  
+    }
+
+    #walabi__texto {
+        padding: 50px;
+        h1{
+            width: 170px;
+            margin-left: 20px;
+        }
     }
     
 
@@ -695,7 +732,10 @@ $mapaletra: (
       
       
     }
-    
+    #walabi__texto {
+        padding: 60px;
+    }
+
     #footer__mapa img{
         @include footerimg(40px,40px )
     
