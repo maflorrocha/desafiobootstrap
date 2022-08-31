@@ -183,28 +183,25 @@ audio {
     align-items: center;
     justify-content: space-between; }
     #footer .row div {
-      width: 120px; }
-
-#footerw__dondeestamos {
-  color: white;
-  font-family: 'Fahkwang', sans-serif;
-  width: 130px; }
+      width: 120px;
+      height: 50px; }
 
 #footer__dondeestamos {
   color: white;
   font-family: 'Fahkwang', sans-serif;
-  width: 130px; }
+  width: 130px;
+  margin-left: 10px; }
 
 #footer__mapa img {
   border-radius: 40px;
   width: 40px;
   height: 40px; }
 
-#footer__nuestrasredes h6 {
+#footer__nuestrasredes {
   color: white;
   text-align: right;
   font-family: 'Fahkwang', sans-serif;
-  padding-right: 5px; }
+  margin-right: 10px; }
 
 #footer__facebook img {
   width: 60px;
@@ -545,30 +542,50 @@ div .caja {
   font-weight: 400; }
 
 @media (max-width: 768px) and (min-width: 577px) {
+  #footer {
+    height: 60px;
+    display: inline-block; }
+    #footer .row {
+      display: flex;
+      justify-content: space-around;
+      align-items: stretch; }
   #footer__dondeestamos {
-    display: none;
-    font-size: small;
-    position: relative; }
+    display: none; }
   #walabi__texto {
     padding: 50px; }
     #walabi__texto h1 {
       width: 170px;
       margin-left: 20px; }
   #footer__mapa img {
-    width: 50px;
-    height: 50px; }
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 5px; }
   #footer__facebook img {
-    width: 70px;
-    height: 70px; }
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 5px; }
   #footer__instagram img {
-    width: 50px;
-    height: 50px; }
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 5px; }
   #footer__mapa {
-    width: 80px; }
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   #footer__facebook {
-    width: 90px; }
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   #footer__instagram {
-    width: 80px; }
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   #footer__nuestrasredes {
     display: none;
     width: 120px; }
@@ -621,21 +638,38 @@ div .caja {
     margin-right: 10px; } }
 
 @media (max-width: 576px) {
-  #footer__dondeestamos {
-    font-size: smaller;
-    position: relative;
-    display: none; }
+  #footer {
+    display: inline; }
+    #footer .row {
+      background-color: black; }
+    #footer #footer__dondeestamos {
+      display: none; }
+    #footer #footer__mapa {
+      width: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    #footer #footer__facebook {
+      width: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    #footer #footer__instagram {
+      width: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
   #walabi__texto {
     padding: 60px; }
   #footer__mapa img {
-    width: 40px;
-    height: 40px; }
+    width: 30px;
+    height: 30px; }
   #footer__facebook img {
-    width: 60px;
-    height: 60px; }
-  #footer__instagram img {
     width: 40px;
     height: 40px; }
+  #footer__instagram img {
+    width: 30px;
+    height: 30px; }
   #footer .row div {
     width: 100px; }
   #footer__nuestrasredes {

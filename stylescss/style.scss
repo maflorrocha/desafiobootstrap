@@ -260,36 +260,30 @@ audio {
         justify-content: space-between;
         div {
          width: 120px;
+         height: 50px;
          }
      }   
 }
-
-#footerw__dondeestamos {
-    color: white;
-    font-family:'Fahkwang', sans-serif;
-    width: 130px;
-  
-}
-
-
 
 #footer__dondeestamos {
     color: white;
     font-family:'Fahkwang', sans-serif;
     width: 130px;
+    margin-left: 10px;
   
 }
+
 
 #footer__mapa img {
     border-radius: 40px;
     @include footerimg(40px,40px)
 }
 
-#footer__nuestrasredes h6 {
+#footer__nuestrasredes {
     color: white;
     text-align: right;
     font-family:'Fahkwang', sans-serif;
-    padding-right: 5px;
+    margin-right: 10px;
     
 }
 
@@ -733,10 +727,22 @@ $mapaletra: (
 
 
 @media  (max-width:768px) and (min-width:577px) {
+    
+    #footer {
+        height: 60px;
+        display: inline-block;
+        .row {
+            display: flex;
+            justify-content: space-around;
+            align-items:stretch;
+            
+        }
+    }
+    
+    
     #footer__dondeestamos {
         display: none;
-        font-size: small;
-        position: relative;
+        
     }
 
     #walabi__texto {
@@ -748,30 +754,45 @@ $mapaletra: (
     }
     
 
-
     #footer__mapa img{
-        @include footerimg(50px,50px )
+        @include footerimg(30px,30px );
+       position: relative;
+       top: 5px;
+        
     }
 
     #footer__facebook img {
-        @include footerimg(70px,70px )   
+        @include footerimg(40px,40px );
+        position: relative;
+        top: 5px;   
     }
     
     #footer__instagram img {
-        @include footerimg(50px,50px )
+        @include footerimg(30px,30px );
+        position: relative;
+        top:5px;
         
     } 
 
     #footer__mapa {
         width: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #footer__facebook {
         width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #footer__instagram {
         width: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #footer__nuestrasredes {
@@ -861,32 +882,51 @@ $mapaletra: (
 
 
 @media (max-width:576px) {
-    #footer__dondeestamos {
-        font-size: smaller;
-        position: relative;
-        display:none
-      
-      
+    #footer {
+        display: inline;
+        .row {background-color: black;}
+        #footer__dondeestamos {
+            display:none
+        }  
+        #footer__mapa {
+            width: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #footer__facebook {
+            width: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #footer__instagram {
+            width: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
+   
     #walabi__texto {
         padding: 60px;
     }
 
     #footer__mapa img{
-        @include footerimg(40px,40px )
+        @include footerimg(30px,30px )
     
    
 
     }
 
     #footer__facebook img {
-        @include footerimg(60px,60px )
+        @include footerimg(40px,40px )
        
         
     }
     
     #footer__instagram img {
-        @include footerimg(40px,40px )
+        @include footerimg(30px,30px )
         
     }
 
