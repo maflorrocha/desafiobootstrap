@@ -252,6 +252,7 @@ audio {
     margin: 0px;
     padding: 0px;
     background-color: $colorfooter;
+    height: 70px;
     .row {
         display: flex;
         flex-direction: row;
@@ -270,13 +271,15 @@ audio {
     font-family:'Fahkwang', sans-serif;
     width: 130px;
     margin-left: 10px;
+    padding-top: 10px;
   
 }
 
 
 #footer__mapa img {
     border-radius: 40px;
-    @include footerimg(40px,40px)
+    @include footerimg(40px,40px);
+    margin-top: 15px;
 }
 
 #footer__nuestrasredes {
@@ -284,18 +287,22 @@ audio {
     text-align: right;
     font-family:'Fahkwang', sans-serif;
     margin-right: 10px;
+    padding-top: 10px;
     
 }
 
 
 #footer__facebook img {
-    @include footerimg(60px,60px )
+    @include footerimg(60px,60px );
+    margin-top: 5px;
+
    
     
 }
 
 #footer__instagram img {
-    @include footerimg(40px,40px )
+    @include footerimg(40px,40px );
+    margin-top:15px;
     
 }
 
@@ -756,8 +763,7 @@ $mapaletra: (
 
     #footer__mapa img{
         @include footerimg(30px,30px );
-       position: relative;
-       top: 5px;
+       
         
     }
 
@@ -769,8 +775,7 @@ $mapaletra: (
     
     #footer__instagram img {
         @include footerimg(30px,30px );
-        position: relative;
-        top:5px;
+       
         
     } 
 
@@ -800,34 +805,48 @@ $mapaletra: (
         width: 120px;
     }
 
-    #menugrande {
-        display: none;
+    
+    #cabezadepagina.row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        #menugrande {
+            display: none;
+        }
+        #menumobile {
+            display:inline;
+            width: 100px;
+            align-self: flex-end;
+            div.row {
+                width: 50px;
+                float: left;
+            }
     }
+    
+        
+        
+    }
+    
 
-    #menumobile ul {
+    #menudesplegable {
         list-style: none;
-    }
-    #menumobile {
-        display:flex;
-        align-self: flex-start;
-    }
-
-    #menumobile ul{
-        list-style: none;
-    }
-
-    #menudesplegable img {
+        float: left;
+        img {
         width: 30px;
         height: 30px;
     }
+        ul {
+        list-style: none;        
+    }
+
+
+}
 
     #menudesplegable>li {
         float: left;
         text-align:left;
-        a {
-            font-family: $font_family;
-            color: black;    
-        }
+        
     }
 
     #menudesplegable>li>ul{
@@ -857,6 +876,13 @@ $mapaletra: (
         }
     }   
 
+    #menumobile.lista a{
+            font-family: $font_family;
+            color: black;    
+        }
+    
+
+
     .container h2 {
         padding-top: 30px;
         padding-bottom: 30px;
@@ -877,7 +903,6 @@ $mapaletra: (
             margin-right: 10px;
     }
     
-
 }
 
 
@@ -893,18 +918,24 @@ $mapaletra: (
             display: flex;
             justify-content: center;
             align-items: center;
+            position: relative;
+            bottom: 7px;
         }
         #footer__facebook {
             width: 90px;
             display: flex;
             justify-content: center;
             align-items: center;
+            position: relative;
+            bottom: 3px;
         }
         #footer__instagram {
             width: 80px;
             display: flex;
             justify-content: center;
             align-items: center;
+            position: relative;
+            bottom: 7px;
         }
     }
    

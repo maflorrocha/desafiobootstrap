@@ -175,7 +175,8 @@ audio {
 #footer {
   margin: 0px;
   padding: 0px;
-  background-color: black; }
+  background-color: black;
+  height: 70px; }
   #footer .row {
     display: flex;
     flex-direction: row;
@@ -190,26 +191,31 @@ audio {
   color: white;
   font-family: 'Fahkwang', sans-serif;
   width: 130px;
-  margin-left: 10px; }
+  margin-left: 10px;
+  padding-top: 10px; }
 
 #footer__mapa img {
   border-radius: 40px;
   width: 40px;
-  height: 40px; }
+  height: 40px;
+  margin-top: 15px; }
 
 #footer__nuestrasredes {
   color: white;
   text-align: right;
   font-family: 'Fahkwang', sans-serif;
-  margin-right: 10px; }
+  margin-right: 10px;
+  padding-top: 10px; }
 
 #footer__facebook img {
   width: 60px;
-  height: 60px; }
+  height: 60px;
+  margin-top: 5px; }
 
 #footer__instagram img {
   width: 40px;
-  height: 40px; }
+  height: 40px;
+  margin-top: 15px; }
 
 .container h2 {
   padding-top: 30px;
@@ -558,9 +564,7 @@ div .caja {
       margin-left: 20px; }
   #footer__mapa img {
     width: 30px;
-    height: 30px;
-    position: relative;
-    top: 5px; }
+    height: 30px; }
   #footer__facebook img {
     width: 40px;
     height: 40px;
@@ -568,9 +572,7 @@ div .caja {
     top: 5px; }
   #footer__instagram img {
     width: 30px;
-    height: 30px;
-    position: relative;
-    top: 5px; }
+    height: 30px; }
   #footer__mapa {
     width: 80px;
     display: flex;
@@ -589,24 +591,31 @@ div .caja {
   #footer__nuestrasredes {
     display: none;
     width: 120px; }
-  #menugrande {
-    display: none; }
-  #menumobile ul {
-    list-style: none; }
-  #menumobile {
+  #cabezadepagina.row {
     display: flex;
-    align-self: flex-start; }
-  #menumobile ul {
-    list-style: none; }
-  #menudesplegable img {
-    width: 30px;
-    height: 30px; }
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    #cabezadepagina.row #menugrande {
+      display: none; }
+    #cabezadepagina.row #menumobile {
+      display: inline;
+      width: 100px;
+      align-self: flex-end; }
+      #cabezadepagina.row #menumobile div.row {
+        width: 50px;
+        float: left; }
+  #menudesplegable {
+    list-style: none;
+    float: left; }
+    #menudesplegable img {
+      width: 30px;
+      height: 30px; }
+    #menudesplegable ul {
+      list-style: none; }
   #menudesplegable > li {
     float: left;
     text-align: left; }
-    #menudesplegable > li a {
-      font-family: "Fahkwang", sans-serif;
-      color: black; }
   #menudesplegable > li > ul {
     display: none; }
   #menudesplegable > li:hover > ul {
@@ -623,6 +632,9 @@ div .caja {
       opacity: 1; }
     100% {
       opacity: 1; } }
+  #menumobile.lista a {
+    font-family: "Fahkwang", sans-serif;
+    color: black; }
   .container h2 {
     padding-top: 30px;
     padding-bottom: 30px; }
@@ -648,17 +660,23 @@ div .caja {
       width: 80px;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      position: relative;
+      bottom: 7px; }
     #footer #footer__facebook {
       width: 90px;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      position: relative;
+      bottom: 3px; }
     #footer #footer__instagram {
       width: 80px;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      position: relative;
+      bottom: 7px; }
   #walabi__texto {
     padding: 60px; }
   #footer__mapa img {
