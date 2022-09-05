@@ -386,172 +386,92 @@ div .caja {
   100% {
     opacity: 1; } }
 
-#menuproyectos {
-  background-color: whitesmoke;
-  align-items: center;
-  border-top: solid 1px #3d3242; }
-  #menuproyectos b #menuproyectos__titulo h2 {
-    background-color: whitesmoke;
-    color: #3d3242;
+#portfolio__titulo {
+  background-color: black;
+  height: 100px;
+  opacity: 80%; }
+  #portfolio__titulo h2 {
+    color: whitesmoke;
     font-family: "Fahkwang", sans-serif;
-    text-align: center;
-    font-weight: 700;
-    padding-top: 20px;
-    padding-bottom: 10px; }
-  #menuproyectos #menuproyectos__menu {
-    text-align: center; }
-    #menuproyectos #menuproyectos__menu #hormiga {
-      color: #76323f; }
-    #menuproyectos #menuproyectos__menu #bebedero {
-      color: #3d3242; }
-    #menuproyectos #menuproyectos__menu #atiko {
-      color: #bf930d; }
-    #menuproyectos #menuproyectos__menu a {
-      font-family: "Fahkwang", sans-serif;
-      padding-left: 20px;
-      animation-duration: 60s;
-      animation-name: efectopresentacion;
-      animation-iteration-count: infinite; }
+    font-size: 80px; }
 
-#portfolio1 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; }
+#portfoliochn {
+  background-color: black;
+  opacity: 80%;
+  margin: 0px; }
+  #portfoliochn #pchn div {
+    height: 400px;
+    border: solid 1px white; }
 
-#chn {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-color: #76323f;
-  color: whitesmoke; }
-  #chn .nombre__proyecto {
-    width: 600px;
-    display: inline;
-    float: left;
-    text-align: center;
-    padding-top: 70px; }
-  #chn .proyecto__descripcion {
-    width: 700px;
-    float: right;
-    text-align: center;
-    background-color: #76323f;
-    color: whitesmoke;
-    padding-top: 10px; }
-    #chn .proyecto__descripcion a {
-      align-items: right; }
+#chnn1 {
+  background-image: url(/desafioboot/img/hormiganegra/H2.jpg); }
 
-#bebe {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-color: #3d3242;
-  color: whitesmoke; }
-  #bebe .nombre__proyecto {
-    width: 600px;
-    display: inline;
-    float: left;
-    text-align: center;
-    padding-top: 50px; }
-  #bebe .proyecto__descripcion {
-    width: 700px;
-    float: right;
-    text-align: center;
-    background-color: #3d3242;
-    color: whitesmoke;
-    padding-top: 10px; }
-    #bebe .proyecto__descripcion a {
-      align-items: right; }
+#chnn2 {
+  background-image: url(/desafioboot/img/hormiganegra/H4.jpg); }
 
-#ati {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-color: #bf930d;
-  color: whitesmoke; }
-  #ati .nombre__proyecto {
-    width: 600px;
-    display: inline;
-    float: left;
-    text-align: center;
-    padding-top: 40px; }
-  #ati .proyecto__descripcion {
-    width: 700px;
-    float: right;
-    text-align: center;
-    background-color: #bf930d;
-    color: whitesmoke;
-    padding-top: 10px; }
-    #ati .proyecto__descripcion a {
-      align-items: right;
-      color: #3d3242; }
+#chnn3 {
+  background-image: url(/desafioboot/img/hormiganegra/H2.jpg); }
 
-#carruselchn {
-  background-color: #76323f;
-  justify-content: center;
-  animation-duration: 100s;
-  animation-name: efectocarrusel;
-  animation-iteration-count: infinite; }
-  #carruselchn img {
-    border: solid 2px #3d3242;
-    margin-bottom: 10px; }
+#chnn4 {
+  background-image: url(/desafioboot/img/hormiganegra/H5.jpg); }
 
-@keyframes efectocarrusel {
-  0% {
-    opacity: 0; }
-  2% {
-    opacity: 0; }
-  4% {
-    opacity: 1; }
-  100% {
-    opacity: 1; } }
+#chnn5 {
+  background-image: url(/desafioboot/img/hormiganegra/H6.jpg); }
 
-#carruselbebe {
-  background-color: #3d3242;
-  justify-content: center;
-  animation-duration: 100s;
-  animation-name: efectocarrusel;
-  animation-iteration-count: infinite; }
-  #carruselbebe img {
-    border: solid 2px #bf930d;
-    margin-bottom: 10px; }
+#chnn6 {
+  background-image: url(/desafioboot/img/hormiganegra/H8.jpg); }
 
-@keyframes efectocarrusel {
-  0% {
-    opacity: 0; }
-  2% {
-    opacity: 0; }
-  4% {
-    opacity: 1; }
-  100% {
-    opacity: 1; } }
+#portfoliobebe {
+  background-color: black;
+  opacity: 80%;
+  margin: 0px; }
+  #portfoliobebe #pbebe div {
+    height: 400px;
+    border: solid 1px white; }
 
-#carruselati {
-  background-color: #bf930d;
-  justify-content: center;
-  animation-duration: 100s;
-  animation-name: efectocarrusel;
-  animation-iteration-count: infinite; }
-  #carruselati img {
-    border: solid 2px #76323f;
-    margin-bottom: 10px; }
+#bebe1 {
+  background-image: url(/desafioboot/img/bebedero/B5.jpg); }
 
-@keyframes efectocarrusel {
-  0% {
-    opacity: 0; }
-  2% {
-    opacity: 0; }
-  4% {
-    opacity: 1; }
-  100% {
-    opacity: 1; } }
+#bebe2 {
+  background-image: url(/desafioboot/img/bebedero/B4.jpg); }
 
-.proyecto__titulo, .proyecto__descripcion {
-  text-align: center; }
+#bebe3 {
+  background-image: url(/desafioboot/img/bebedero/B1.jpg); }
 
-.proyecto__descripcion a {
-  color: #bf930d;
-  font-family: "Fahkwang", sans-serif;
-  font-weight: 400; }
+#bebe4 {
+  background-image: url(/desafioboot/img/bebedero/B2.jpg); }
+
+#bebe5 {
+  background-image: url(/desafioboot/img/bebedero/B3.jpg); }
+
+#bebe6 {
+  background-image: url(/desafioboot/img/bebedero/B7.jpg); }
+
+#portfolioati {
+  background-color: black;
+  opacity: 80%;
+  margin: 0px; }
+  #portfolioati #pati div {
+    height: 400px;
+    border: solid 1px white; }
+
+#ati1 {
+  background-image: url(/desafioboot/img/Atiko/A1.jpg); }
+
+#ati2 {
+  background-image: url(/desafioboot/img/Atiko/A2.jpeg); }
+
+#ati3 {
+  background-image: url(/desafioboot/img/Atiko/A3.jpeg); }
+
+#ati4 {
+  background-image: url(/desafioboot/img/Atiko/A4.jpeg); }
+
+#ati5 {
+  background-image: url(/desafioboot/img/Atiko/A5.jpeg); }
+
+#ati6 {
+  background-image: url(/desafioboot/img/Atiko/A6.jpeg); }
 
 @media (max-width: 768px) and (min-width: 577px) {
   #footer {

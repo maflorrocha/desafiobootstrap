@@ -40,7 +40,6 @@ $font_family :'Fahkwang', sans-serif;
 } 
 
 
-
 #seccioncontenido {
     background-image: url(./img/inicio.jpg);
     background-size: cover;
@@ -524,217 +523,122 @@ $mapaletra: (
          }
         }
 
-#menuproyectos {
-    background-color: $colorheader;
-    align-items: center;
-    border-top: solid 1px $gris;
-    b
-    #menuproyectos__titulo h2 {
-        background-color: $colorheader;
-        color: $gris;
-        font-family: $font_family;
-        text-align: center;
-        font-weight: 700;
-        padding-top: 20px;
-        padding-bottom: 10px;
-    }
-    #menuproyectos__menu {
-        text-align: center;
-        #hormiga { color: $bordo;}
-        #bebedero {color:$gris;}
-        #atiko { color: $camel;}
-        a {
+    #portfolio__titulo {
+        background-color: black;
+        height: 100px;
+        opacity: 80%;
+        h2 {
+            color: whitesmoke;
             font-family: $font_family;
-            padding-left: 20px;
-            animation-duration: 60s;
-            animation-name: efectopresentacion;
-            animation-iteration-count: infinite;
+            font-size: 80px;
         }
     }
-}
-#portfolio1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;   
-}
 
-#chn {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: $bordo;
-    color: $colorheader;
-    .nombre__proyecto {
-        width: 600px;
-        display: inline;
-        float: left;
-        text-align: center;
-        padding-top: 70px;
-    }
-    .proyecto__descripcion {
-        width: 700px;
-        float: right;
-        text-align: center;
-        background-color: $bordo;
-        color: $colorheader;
-        padding-top: 10px;
-        a {
-            align-items: right;
+    #portfoliochn {
+        background-color: black;
+        opacity: 80%;
+        margin: 0px;
+        #pchn div {
+            height: 400px;
+            border: solid 1px white; 
+           
         }
     }
-}
 
-#bebe {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: $gris;
-    color: $colorheader;
-    .nombre__proyecto {
-        width: 600px;
-        display: inline;
-        float: left;
-        text-align: center;
-        padding-top: 50px;
+    #chnn1 {
+        background-image: url(/desafioboot/img/hormiganegra/H2.jpg);      
+    }   
+  
+    #chnn2 {
+        background-image: url(/desafioboot/img/hormiganegra/H4.jpg);      
+    }   
+
+    #chnn3 {
+        background-image: url(/desafioboot/img/hormiganegra/H2.jpg);      
+    }   
+
+    #chnn4 {
+        background-image: url(/desafioboot/img/hormiganegra/H5.jpg);      
     }
-    .proyecto__descripcion {
-        width: 700px;
-        float: right;
-        text-align: center;
-        background-color: $gris;
-        color: $colorheader;
-        padding-top: 10px;
-        a {
-            align-items: right;
+
+    #chnn5 {
+        background-image: url(/desafioboot/img/hormiganegra/H6.jpg);      
+    }
+
+    #chnn6 {
+        background-image: url(/desafioboot/img/hormiganegra/H8.jpg);      
+    }
+
+
+    #portfoliobebe {
+        background-color: black;
+        opacity: 80%;
+        margin: 0px;
+        #pbebe div {
+            height: 400px;
+            border: solid 1px white; 
+           
         }
     }
-}
 
-#ati {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: $camel;
-    color: $colorheader;
-    .nombre__proyecto {
-        width: 600px;
-        display: inline;
-        float: left;
-        text-align: center;
-        padding-top: 40px;
+    #bebe1 {
+        background-image: url(/desafioboot/img/bebedero/B5.jpg);      
+    }   
+  
+    #bebe2 {
+        background-image: url(/desafioboot/img/bebedero/B4.jpg);      
+    }   
+
+    #bebe3 {
+        background-image: url(/desafioboot/img/bebedero/B1.jpg);      
+    }   
+
+    #bebe4 {
+        background-image: url(/desafioboot/img/bebedero/B2.jpg);      
     }
-    .proyecto__descripcion {
-        width: 700px;
-        float: right;
-        text-align: center;
-        background-color: $camel;
-        color: $colorheader;
-        padding-top: 10px;
-        a {
-            align-items: right;
-            color: #3d3242;
+
+    #bebe5 {
+        background-image: url(/desafioboot/img/bebedero/B3.jpg);      
+    }
+
+    #bebe6 {
+        background-image: url(/desafioboot/img/bebedero/B7.jpg);      
+    }
+
+    #portfolioati {
+        background-color: black;
+        opacity: 80%;
+        margin: 0px;
+        #pati div {
+            height: 400px;
+            border: solid 1px white; 
+           
         }
     }
-}
 
-#carruselchn {
-    background-color: $bordo;
-    justify-content: center;
-    animation-duration: 100s;
-    animation-name: efectocarrusel;
-    animation-iteration-count: infinite;
-    img {
-        border:  solid 2px $gris;
-        margin-bottom: 10px;
-    }
-}
-@keyframes efectocarrusel {
-    0% {
-        opacity: 0;
-    }
-    2% {
-        opacity: 0;
-    }
-    
-    4% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 1;
-    }
-}
+    #ati1 {
+        background-image: url(/desafioboot/img/Atiko/A1.jpg);      
+    }   
+  
+    #ati2 {
+        background-image: url(/desafioboot/img/Atiko/A2.jpeg);      
+    }   
 
+    #ati3 {
+        background-image: url(/desafioboot/img/Atiko/A3.jpeg);      
+    }   
 
-#carruselbebe {
-    background-color: $gris;
-    justify-content: center;
-    animation-duration: 100s;
-    animation-name: efectocarrusel;
-    animation-iteration-count: infinite;
-    img {
-        border:  solid 2px $camel;
-        margin-bottom: 10px;
-    }
-}
-@keyframes efectocarrusel {
-    0% {
-        opacity: 0;
-    }
-    2% {
-        opacity: 0;
-    }
-    
-    4% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-#carruselati {
-    background-color: $camel;
-    justify-content: center;
-    animation-duration: 100s;
-    animation-name: efectocarrusel;
-    animation-iteration-count: infinite;
-    img {
-        border:  solid 2px $bordo;
-        margin-bottom: 10px;
-    }
-}
-@keyframes efectocarrusel {
-    0% {
-        opacity: 0;
-    }
-    2% {
-        opacity: 0;
-    }
-    
-    4% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-
-
-.proyecto__titulo {
-    text-align: center;
-    
-}
-.proyecto__descripcion {
-    @extend .proyecto__titulo;
-    a {
-        color: #bf930d;
-        font-family: $font_family;
-        font-weight: 400;
+    #ati4 {
+        background-image: url(/desafioboot/img/Atiko/A4.jpeg);      
     }
 
-}
+    #ati5 {
+        background-image: url(/desafioboot/img/Atiko/A5.jpeg);      
+    }
 
+    #ati6 {
+        background-image: url(/desafioboot/img/Atiko/A6.jpeg);      
+    }
 
 @media  (max-width:768px) and (min-width:577px) {
     
