@@ -239,6 +239,8 @@ audio {
   margin: 20px; }
 
 #quienes {
+  background-image: url(./img/shaking.jpg);
+  background-size: cover;
   animation-duration: 60s;
   animation-name: background3;
   animation-iteration-count: infinite; }
@@ -257,16 +259,20 @@ h3 {
   text-transform: uppercase; }
 
 #quienes #quienes__p:nth-child(1) {
-  background-color: #eecd86; }
+  background-color: #eecd86;
+  opacity: 85%; }
 
 #quienes #quienes__p:nth-child(2) {
-  background-color: #bf930d; }
+  background-color: #bf930d;
+  opacity: 85%; }
 
 #quienes #quienes__p:nth-child(3) {
-  background-color: #76323f; }
+  background-color: #76323f;
+  opacity: 85%; }
 
 #quienes #quienes__p:nth-child(4) {
-  background-color: #3d3242; }
+  background-color: #3d3242;
+  opacity: 85%; }
 
 #quienes #quienes__p:nth-child(1) {
   color: #76323f; }
@@ -623,6 +629,11 @@ div .caja {
     animation-duration: 10s;
     animation-name: aparecemenu;
     animation-iteration-count: infinite; }
+    #menudesplegable > li:hover > ul li {
+      font-family: "Fahkwang", sans-serif; }
+      #menudesplegable > li:hover > ul li a {
+        list-style: none;
+        color: #3d3242; }
   @keyframes aparecemenu {
     0% {
       opacity: 0; }
@@ -696,8 +707,8 @@ div .caja {
     display: none; }
   #menumobile {
     display: list-item; }
-  #menumobile ul {
-    list-style: none; }
+    #menumobile ul {
+      list-style: none; }
   #menudesplegable img {
     width: 20px;
     height: 20px; }
@@ -711,6 +722,11 @@ div .caja {
     animation-duration: 10s;
     animation-name: aparecemenu;
     animation-iteration-count: infinite; }
+    #menudesplegable > li:hover > ul li {
+      font-family: "Fahkwang", sans-serif; }
+      #menudesplegable > li:hover > ul li a {
+        list-style: none;
+        color: #3d3242; }
   @keyframes aparecemenu {
     0% {
       opacity: 0; }

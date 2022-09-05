@@ -332,6 +332,8 @@ audio {
 
 
 #quienes {
+    background-image:url(./img/shaking.jpg);
+    background-size: cover;
     animation-duration: 60s;
     animation-name: background3;
     animation-iteration-count: infinite;
@@ -368,6 +370,7 @@ $mapacolores: (
     #quienes{
         #quienes__p:nth-child(#{$id}){
             background-color: $backcolor;
+            opacity: 85%;
         }
     }
 }
@@ -858,7 +861,15 @@ $mapaletra: (
         animation-duration: 10s;
         animation-name: aparecemenu;
         animation-iteration-count: infinite;
+        li {
+            font-family: $font_family;
+            a {
+                list-style: none;
+                color: #3d3242;
+            }
+        }
     }
+
 
     @keyframes aparecemenu {
         0% {
@@ -975,10 +986,9 @@ $mapaletra: (
 
     #menumobile {
         display:list-item;
-    }
-
-    #menumobile ul{
-        list-style: none;
+        ul {
+            list-style: none;
+        }
     }
 
     #menudesplegable img {
@@ -1000,6 +1010,13 @@ $mapaletra: (
         animation-duration: 10s;
         animation-name: aparecemenu;
         animation-iteration-count: infinite;
+        li {
+            font-family: $font_family;
+            a {
+                list-style: none;
+                color: #3d3242;
+            }
+        }
     }
 
     @keyframes aparecemenu {
