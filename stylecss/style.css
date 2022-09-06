@@ -401,25 +401,31 @@ div .caja {
   margin: 0px; }
   #portfoliochn #pchn div {
     height: 400px;
-    border: solid 1px white; }
+    border: solid 0.5px black; }
 
 #chnn1 {
-  background-image: url(/desafioboot/img/hormiganegra/H2.jpg); }
+  background-image: url(/desafioboot/stylecss/img/hormiganegra/h1.png);
+  background-size: cover; }
 
 #chnn2 {
-  background-image: url(/desafioboot/img/hormiganegra/H4.jpg); }
+  background-image: url(/desafioboot/stylecss/img/hormiganegra/h2.png);
+  background-size: cover; }
 
 #chnn3 {
-  background-image: url(/desafioboot/img/hormiganegra/H2.jpg); }
+  background-image: url(/desafioboot/stylecss/img/hormiganegra/h3.png);
+  background-size: cover; }
 
 #chnn4 {
-  background-image: url(/desafioboot/img/hormiganegra/H5.jpg); }
+  background-image: url(/desafioboot/stylecss/img/hormiganegra/h5.png);
+  background-size: cover; }
 
 #chnn5 {
-  background-image: url(/desafioboot/img/hormiganegra/H6.jpg); }
+  background-image: url(/desafioboot/stylecss/img/hormiganegra/h8.png);
+  background-size: cover; }
 
 #chnn6 {
-  background-image: url(/desafioboot/img/hormiganegra/H8.jpg); }
+  background-image: url(/desafioboot/stylecss/img/hormiganegra/h6.png);
+  background-size: cover; }
 
 #portfoliobebe {
   background-color: black;
@@ -427,25 +433,31 @@ div .caja {
   margin: 0px; }
   #portfoliobebe #pbebe div {
     height: 400px;
-    border: solid 1px white; }
+    border: solid 0.5px black; }
 
 #bebe1 {
-  background-image: url(/desafioboot/img/bebedero/B5.jpg); }
+  background-image: url(/desafioboot/stylecss/img/bebedero/b1.png);
+  background-size: cover; }
 
 #bebe2 {
-  background-image: url(/desafioboot/img/bebedero/B4.jpg); }
+  background-image: url(/desafioboot/stylecss/img/bebedero/b2.png);
+  background-size: cover; }
 
 #bebe3 {
-  background-image: url(/desafioboot/img/bebedero/B1.jpg); }
+  background-image: url(/desafioboot/stylecss/img/bebedero/b3.png);
+  background-size: cover; }
 
 #bebe4 {
-  background-image: url(/desafioboot/img/bebedero/B2.jpg); }
+  background-image: url(/desafioboot/stylecss/img/bebedero/b4.png);
+  background-size: cover; }
 
 #bebe5 {
-  background-image: url(/desafioboot/img/bebedero/B3.jpg); }
+  background-image: url(/desafioboot/stylecss/img/bebedero/b5.png);
+  background-size: cover; }
 
 #bebe6 {
-  background-image: url(/desafioboot/img/bebedero/B7.jpg); }
+  background-image: url(/desafioboot/stylecss/img/bebedero/b6.png);
+  background-size: cover; }
 
 #portfolioati {
   background-color: black;
@@ -453,25 +465,31 @@ div .caja {
   margin: 0px; }
   #portfolioati #pati div {
     height: 400px;
-    border: solid 1px white; }
+    border: solid 1px black; }
 
 #ati1 {
-  background-image: url(/desafioboot/img/Atiko/A1.jpg); }
+  background-image: url(/desafioboot/stylecss/img/Atiko/a1.png);
+  background-size: cover; }
 
 #ati2 {
-  background-image: url(/desafioboot/img/Atiko/A2.jpeg); }
+  background-image: url(/desafioboot/stylecss/img/Atiko/a2.png);
+  background-size: cover; }
 
 #ati3 {
-  background-image: url(/desafioboot/img/Atiko/A3.jpeg); }
+  background-image: url(/desafioboot/stylecss/img/Atiko/a3.png);
+  background-size: cover; }
 
 #ati4 {
-  background-image: url(/desafioboot/img/Atiko/A4.jpeg); }
+  background-image: url(/desafioboot/stylecss/img/Atiko/a4.png);
+  background-size: cover; }
 
 #ati5 {
-  background-image: url(/desafioboot/img/Atiko/A5.jpeg); }
+  background-image: url(/desafioboot/stylecss/img/Atiko/A5.png);
+  background-size: cover; }
 
 #ati6 {
-  background-image: url(/desafioboot/img/Atiko/A6.jpeg); }
+  background-image: url(/desafioboot/stylecss/img/Atiko/a6.png);
+  background-size: cover; }
 
 @media (max-width: 768px) and (min-width: 577px) {
   #footer {
