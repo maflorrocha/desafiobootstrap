@@ -25,7 +25,7 @@
   padding: 10px; }
 
 #seccioncontenido {
-  background-image: url(./img/inicio.jpg);
+  background-image: url(/desafioboot/img/inicio.jpg);
   background-size: cover;
   text-align: center;
   animation-duration: 30s;
@@ -121,7 +121,7 @@ audio {
     opacity: 1; } }
 
 .formulario {
-  background-image: url(./img/pexels-eduardo-dutra-2115217.jpg);
+  background-image: url(/desafioboot/img/pexels-eduardo-dutra-2115217.jpg);
   background-size: cover;
   text-align: center;
   color: white;
@@ -239,7 +239,7 @@ audio {
   margin: 20px; }
 
 #quienes {
-  background-image: url(./img/shaking.jpg);
+  background-image: url(/desafioboot/img/shaking.jpg);
   background-size: cover;
   animation-duration: 60s;
   animation-name: background3;
@@ -312,7 +312,7 @@ div .caja {
     text-transform: uppercase; } }
 
 #walabi {
-  background-image: url(./img/pexels-fauxels-3183150.jpg);
+  background-image: url(/desafioboot/img/pexels-fauxels-3183150.jpg);
   background-size: cover; }
   #walabi #walabirow {
     display: flex;
@@ -404,27 +404,27 @@ div .caja {
     border: solid 0.5px black; }
 
 #chnn1 {
-  background-image: url(/stylecss/img/hormiganegra/h1.png);
+  background-image: url(/desafioboot/img/hormiganegra/h1.png);
   background-size: cover; }
 
 #chnn2 {
-  background-image: url(/stylecss/img/hormiganegra/h2.png);
+  background-image: url(/desafioboot/img/hormiganegra/h2.png);
   background-size: cover; }
 
 #chnn3 {
-  background-image: url(/stylecss/img/hormiganegra/h3.png);
+  background-image: url(/desafioboot/img/hormiganegra/h3.png);
   background-size: cover; }
 
 #chnn4 {
-  background-image: url(/stylecss/img/hormiganegra/h5.png);
+  background-image: url(/desafioboot/img/hormiganegra/h5.png);
   background-size: cover; }
 
 #chnn5 {
-  background-image: url(/desafioboot/stylecss/img/hormiganegra/h5.png);
+  background-image: url(/desafioboot/img/hormiganegra/h6.png);
   background-size: cover; }
 
 #chnn6 {
-  background-image: url(/stylecss/img/hormiganegra/h6.png);
+  background-image: url(/desafioboot/img/hormiganegra/h8.png);
   background-size: cover; }
 
 #portfoliobebe {
@@ -436,27 +436,27 @@ div .caja {
     border: solid 0.5px black; }
 
 #bebe1 {
-  background-image: url(/desafioboot/stylecss/img/bebedero/b1.png);
+  background-image: url(/desafioboot/img/bebedero/b1.png);
   background-size: cover; }
 
 #bebe2 {
-  background-image: url(/desafioboot/stylecss/img/bebedero/b2.png);
+  background-image: url(/desafioboot/img/bebedero/b2.png);
   background-size: cover; }
 
 #bebe3 {
-  background-image: url(/desafioboot/stylecss/img/bebedero/b3.png);
+  background-image: url(/desafioboot/img/bebedero/b3.png);
   background-size: cover; }
 
 #bebe4 {
-  background-image: url(/desafioboot/stylecss/img/bebedero/b4.png);
+  background-image: url(/desafioboot/img/bebedero/b4.png);
   background-size: cover; }
 
 #bebe5 {
-  background-image: url(/desafioboot/stylecss/img/bebedero/b5.png);
+  background-image: url(/desafioboot/img/bebedero/b5.png);
   background-size: cover; }
 
 #bebe6 {
-  background-image: url(/desafioboot/stylecss/img/bebedero/b6.png);
+  background-image: url(/desafioboot/img/bebedero/b6.png);
   background-size: cover; }
 
 #portfolioati {
@@ -468,27 +468,27 @@ div .caja {
     border: solid 1px black; }
 
 #ati1 {
-  background-image: url(/desafioboot/stylecss/img/Atiko/a1.png);
+  background-image: url(/desafioboot/img/Atiko/a1.png);
   background-size: cover; }
 
 #ati2 {
-  background-image: url(/desafioboot/stylecss/img/Atiko/a2.png);
+  background-image: url(/desafioboot/img/Atiko/a2.png);
   background-size: cover; }
 
 #ati3 {
-  background-image: url(/desafioboot/stylecss/img/Atiko/a3.png);
+  background-image: url(/desafioboot/img/Atiko/a3.png);
   background-size: cover; }
 
 #ati4 {
-  background-image: url(/desafioboot/stylecss/img/Atiko/a4.png);
+  background-image: url(/desafioboot/img/Atiko/a4.png);
   background-size: cover; }
 
 #ati5 {
-  background-image: url(/desafioboot/stylecss/img/Atiko/A5.png);
+  background-image: url(/desafioboot/img/Atiko/A5.png);
   background-size: cover; }
 
 #ati6 {
-  background-image: url(/desafioboot/stylecss/img/Atiko/a6.png);
+  background-image: url(/desafioboot/img/Atiko/a6.png);
   background-size: cover; }
 
 @media (max-width: 768px) and (min-width: 577px) {
