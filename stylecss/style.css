@@ -312,7 +312,7 @@ div .caja {
     text-transform: uppercase; } }
 
 #walabi {
-  background-image: url(/desafioboot/img/pexels-fauxels-3183150.jpg);
+  background-image: url(./img/pexels-fauxels-3183150.jpg);
   background-size: cover; }
   #walabi #walabirow {
     display: flex;
