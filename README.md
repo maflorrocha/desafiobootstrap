@@ -1,3 +1,4 @@
+
 Hola! 
 
 ÌNDICE
@@ -5,10 +6,9 @@ Hola!
 2. Página
 3. Cómo fue realizada
 4. Devolución
-
-1.
-Este es el repositorio de mi primer página web.
+Este es el repositorio de mi primer página web
 El mismo tiene 3 ramas
+
     - Master ( contiene todo el proyecto)
     - Sass ( en esta rama trabaje algunas modificaciones al CSS a partir de un archivo SCSS)
     - EntregaFinal ( es la rama en la que hice correcciones de diferentes items para la entrega final antes de mergear las ramas)
