@@ -649,7 +649,7 @@ $mapaletra: (
     }
 
     #ati5 {
-        background-image: url(../img/Atiko/A5.png);
+        background-image: url(../img/Atiko/a5.png);
         background-size: cover;      
     }
 
@@ -836,6 +836,13 @@ $mapaletra: (
             margin-right: 10px;
     }
     
+    #portfolio__titulo h2 {
+        font-size: 40px;
+        position: relative;
+        top: 20px;
+        left: 15px;
+    }
+
 }
 
 
@@ -973,5 +980,10 @@ $mapaletra: (
         margin-right: 10px;
     }
 
+    #portfolio__titulo h2{
+        font-size: 40px;
+                
+    }
+ 
 }
 

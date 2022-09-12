@@ -484,7 +484,7 @@ div .caja {
   background-size: cover; }
 
 #ati5 {
-  background-image: url(../img/Atiko/A5.png);
+  background-image: url(../img/Atiko/a5.png);
   background-size: cover; }
 
 #ati6 {
@@ -596,7 +596,12 @@ div .caja {
     margin-top: 30px;
     margin-bottom: 30px;
     margin-left: 10px;
-    margin-right: 10px; } }
+    margin-right: 10px; }
+  #portfolio__titulo h2 {
+    font-size: 40px;
+    position: relative;
+    top: 20px;
+    left: 15px; } }
 
 @media (max-width: 576px) {
   #footer {
@@ -684,4 +689,6 @@ div .caja {
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 10px;
-    margin-right: 10px; } }
+    margin-right: 10px; }
+  #portfolio__titulo h2 {
+    font-size: 40px; } }
