@@ -5,9 +5,11 @@ Hola!
 1. Repositorio
 2. Página
 3. Cómo fue realizada
-4. Devolución
-Este es el repositorio de mi primer página web
-El mismo tiene 3 ramas
+4. Devoluciónç
+
+
+1
+El mismo tiene 3 ramas:
 
     - Master ( contiene todo el proyecto)
     - Sass ( en esta rama trabaje algunas modificaciones al CSS a partir de un archivo SCSS)
