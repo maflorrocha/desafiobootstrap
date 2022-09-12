@@ -5,11 +5,10 @@ Hola!
 1. Repositorio
 2. Página
 3. Cómo fue realizada
-4. Devoluciónç
+4. Devolucion
 
+1.  Este es el repositorio de mi primer paginaweb. Este repositorio tiene 3 ramas:
 
-1
-El mismo tiene 3 ramas:
 
     - Master ( contiene todo el proyecto)
     - Sass ( en esta rama trabaje algunas modificaciones al CSS a partir de un archivo SCSS)
